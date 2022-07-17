@@ -1,9 +1,14 @@
 @charset "UTF-8";
 body {
-  /* width: 1200px; */
   font-family: Roboto, sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -13,11 +18,20 @@ body {
   margin-right: auto;
   width: 1200px;
 }
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 :root {
@@ -425,30 +439,42 @@ header {
   display: none;
 }
 
-.features-list {
-  display: flex;
-  width: 1200px;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.features-section__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+@media screen and (min-width: 768px) {
+  .features-section__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.features-section {
-  padding-top: 94px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
+.features-list__item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: 25%;
+  }
 }
 
 .features-list__item::before {
   display: block;
   content: "";
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -456,6 +482,17 @@ header {
   background-position: center;
   background-color: var(--button-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item::before {
+    width: 270px;
+  }
 }
 
 .icon-antenna::before {
@@ -472,10 +509,6 @@ header {
 
 .icon-astronaut::before {
   background-image: url(../images/icons/SVG-light/astronaut-icon-copy.svg);
-}
-
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-list__title {
