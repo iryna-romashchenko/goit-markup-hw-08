@@ -1,0 +1,103 @@
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__title {
+    text-align: center;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.team {
+    background-color: var(--team-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.team-list__member {
+    // width: calc(100% - 3 * 30px/4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__image {
+    display: block;
+    width: 270px;
+    height: 260px;
+}
+
+.team-list{
+&__member:not(:last-child){
+    margin-right: 30px;
+}
+}
+.specialist {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.specialist__name {
+    color: var(--title-text-color);
+    /* height: 19px; */
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.specialist__role {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+.specialist-links {
+    display: flex;
+    margin-left: 32px;
+}
+
+.specialist-links__item{
+    fill: var(--icon-fill);
+}
+
+.specialist-links{
+&__item:not(:last-child) {
+    margin-right: 10px;
+}
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    fill: var(--grey-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
