@@ -535,6 +535,11 @@ header {
   }
 }
 
+.features-list__box {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .features-list__item {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -599,6 +604,12 @@ header {
   margin-top: 0;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
+  justify-content: start;
+}
+@media screen and (max-width: 768px) {
+  .features-list__title {
+    text-align: center;
+  }
 }
 
 .features-list__text {

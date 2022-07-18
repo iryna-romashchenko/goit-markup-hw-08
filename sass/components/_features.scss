@@ -10,6 +10,12 @@
     flex-wrap: wrap;
 }
 }
+
+.features-list__box{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 // .features-section__box {
 //     @media screen and (min-width: 768px){
 //     display: flex;
@@ -24,7 +30,7 @@
 
 .features-list__item{
     margin-top: 30px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;  
     @media screen and (min-width: 768px){
      flex-basis: 50% ;
     }
@@ -94,6 +100,11 @@
     margin-top: 0;
     margin-bottom: 10px;
     letter-spacing: 0.03em;
+    justify-content: start;
+
+    @media screen and(max-width: 768px){
+    text-align: center;
+    }
 }
 
 
