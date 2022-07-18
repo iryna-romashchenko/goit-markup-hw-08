@@ -37,12 +37,12 @@
 }
 
 .team-list__member{
-    margin-bottom: 30px;
-    max-width: 480px;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+margin-bottom: 30px;
+max-width: 480px;
+margin-right: auto;
+margin-left: auto;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 @media screen and (min-width: 768px){
 
 width: calc((100% - 4 * 15px)/2);
@@ -76,13 +76,20 @@ width: calc((100% - 8 * 15px)/4);
 // }
 
 .specialist {
-    // display: block;
-    // width: 450px;
+    display: block;
+    width: 450px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     background-color: var(--primary-white-color);
     border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    }
     
 }
 
@@ -113,6 +120,11 @@ width: calc((100% - 8 * 15px)/4);
 
 .specialist-links__item{
     fill: var(--icon-fill);
+    
+}
+
+.specialist-links__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 // .specialist-links{
@@ -136,6 +148,8 @@ width: calc((100% - 8 * 15px)/4);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .icon-link:hover,
 .icon-link:focus {

@@ -127,6 +127,11 @@ header {
     display: none;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .site-nav {
+    margin-left: 88px;
+  }
+}
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -174,11 +179,18 @@ header {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     flex-direction: column;
+    margin-bottom: 10px;
   }
 }
 
 .contact__link {
   display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__link {
+    margin-left: 84px;
+    align-items: flex-end;
+  }
 }
 
 .contact__item:not(:last-child) {
@@ -537,7 +549,6 @@ header {
 
 .features-list__box {
   padding-right: 15px;
-  padding-left: 15px;
 }
 
 .features-list__item {
@@ -771,11 +782,23 @@ header {
 }
 
 .specialist {
+  display: block;
+  width: 450px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .specialist {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specialist {
+    width: 270px;
+  }
 }
 
 .specialist__name {
@@ -802,6 +825,10 @@ header {
 
 .specialist-links__item {
   fill: var(--icon-fill);
+}
+
+.specialist-links__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .icon-link {
