@@ -22,6 +22,16 @@
         <nav class="container main-nav">
             <a href="./index.html" class="logo">Web</a>
 
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+    <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель">
+        <use class="icon-cross" href="./images/symbol-defs.svg#icon-close-icon"></use>
+        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-icon"></use>
+    </svg>
+</button>
+     <div class="menu-container" id="menu-container" data-menu>
+    Content menu
+</div>
+
             <!----------------------------------------Navigation------------------------------ -->
             <ul class="site-nav list">
                 <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link-current">Студия</a></li>
@@ -511,6 +521,7 @@
 </section>
 </footer>
 <script src="./modal.js"></script>
+<script src="./menu.js"></script>
 </body>
 
 </html>
