@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     @media screen and (min-width: 480px) and (max-width: 1199px){
     text-align: center;
+    
     }
     }
 
@@ -66,7 +67,14 @@
     content: "Studio";
     color: var(--primary-white-color);
 }
-
+.address-box{
+@media screen and (min-width: 480px) and (max-width: 767px){
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+margin-bottom: 60px;
+}
+}
 .main-contacts{
 display: flex;
 flex-wrap: wrap;
@@ -77,14 +85,28 @@ margin: 0;
 @media screen and (min-width: 480px) and (max-width: 767px){
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: space-around;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px){
+justify-content: space-around;
+width: 100%;
+}
+@media screen and (min-width: 1200px){
+min-width: 570px;
+}
 }
 
 .join-box {
     display: block;
-    margin-left: 70px;
+    // margin-left: 70px;
+    @media screen and (min-width: 480px) and (max-width: 767px){
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+    }
+ @media screen and (min-width: 768px) and (max-width: 1199px){
+    margin-bottom: 102px;
+ }
 }
 
 .join-box__title {
@@ -101,6 +123,10 @@ justify-content: center;
 .join-box__list {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+justify-content: center;
+    }
+    
 }
 
 .social-link:not(:last-child) {
@@ -135,15 +161,19 @@ justify-content: center;
 
 /* -----------------Subscribe---------------- */
 .subscription {
+    width: 100%;
     display: block;
     margin-right: 0;
     margin-left: auto;
     @media screen and (min-width: 480px) and (max-width: 768px){
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
+   max-width: 450px;
     }
-
+@media screen and (min-width: 1200px){
+    width: unset;
+}
 }
 
 .subscription__title {
@@ -155,25 +185,43 @@ justify-content: center;
     padding: 0;
     margin-bottom: 20px;
     color: var(--primary-white-color);
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+    text-align: center;
+    }
 }
 
 .subscription__label {
-    display: flex;
+    display: block;
     margin: 0;
+    justify-content: center;
+    width: 100%;
     @media screen and (min-width: 480px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    }
+
+}
+
+.subscription__form{
+    display: flex;
+    width: 100%;
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+   flex-direction: column;
+    width: 100%;
+    align-items: center;
     }
 }
 
 .subscription__email {
+    width: 100%;
     display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    width: 358px;
+    // width: 358px;
     height: 50px;
     margin-right: 12px;
     padding: 15px 15px;
@@ -182,8 +230,16 @@ justify-content: center;
     border-radius: 4px;
     color: var(--primary-white-color);
     background-color: transparent;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+    margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+}
+}
 .subscribtion__icon {
     margin-left: 10px;
     fill: var(--primary-white-color);
@@ -195,7 +251,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 200px;
+    max-width: 200px;
     height: 50px;
     font-family: inherit;
     font-weight: 700;
@@ -207,4 +263,5 @@ justify-content: center;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+
 }
