@@ -20,6 +20,44 @@
         <nav class="container main-nav">
             <a href="./index.html" class="logo">Web</a>
 
+
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+    <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель">
+        <use class="icon-cross" href="./images/symbol-defs.svg#icon-close-icon"></use>
+        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-icon"></use>
+    </svg>
+</button>
+<div class="menu-container" id="menu-container" data-menu>
+
+
+    <ul class="mobile-list">
+        <li class="mobile-nav__item mobile-nav__link-current">
+            <a class="mobile-nav__link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Контакты</a>
+        </li>
+    </ul>
+
+
+
+    <ul class="mobile-nav__contacts">
+        <li class="mobile-nav__contact1"><a class="contact1" href="">+38 096 111 11 11</a></li>
+        <li class="mobile-nav__contact2"><a class="contact2" href="">info@devstudio.com</a></li>
+    </ul>
+    <div class="mobile-nav__box">
+        <ul class="mobile-nav__socials">
+            <li class="mobile-nav__social"><a class="social" href="">Instagram</a></li>
+            <li class="mobile-nav__social"><a class="social" href="">Twitter</a></li>
+            <li class="mobile-nav__social"><a class="social" href="">Facebook</a></li>
+            <li class="mobile-nav__social"><a class="social" href="">LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
+
             <!-- Навігація на інші сторінки -->
             <ul class="site-nav list">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
@@ -321,5 +359,6 @@
     
     </section>
 </footer>
+<script src="./menu.js"></script>
 </body>
 </html>
