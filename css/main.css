@@ -59,6 +59,11 @@ header {
   border-bottom: 1px solid var(--border-color);
   padding: 24px 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    padding: 21px 0;
+  }
+}
 
 .main-nav {
   display: flex;
@@ -68,7 +73,7 @@ header {
 
 .menu-button {
   display: inline-flex;
-  margin: 0;
+  margin-left: 250px;
   padding: 0;
   border: black;
   background-color: red;
@@ -195,6 +200,7 @@ header {
 
 .contact__item:not(:last-child) {
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .contact__image {
@@ -247,6 +253,12 @@ header {
     width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpg-images/order-image.jpg);
+  }
+}
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/imgadapt/hero-mob@2x.jpg");
   }
 }
 
@@ -903,7 +915,7 @@ header {
     margin: 15px;
   }
   .clients-list__item:nth-child(3n) {
-    margin-right: 0;
+    margin-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -942,6 +954,7 @@ header {
 /* footer */
 .footer {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   background-color: var(--footer-color);
   padding-top: 60px;
@@ -950,8 +963,9 @@ header {
 
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-nav {
     text-align: center;
   }
@@ -1010,10 +1024,18 @@ header {
 
 .main-contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   padding: 0;
   margin: 0;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .join-box {
@@ -1073,6 +1095,12 @@ header {
   margin-right: 0;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .subscription {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .subscription__title {
   font-weight: 700;
@@ -1088,6 +1116,14 @@ header {
 .subscription__label {
   display: flex;
   margin: 0;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscription__label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .subscription__email {
