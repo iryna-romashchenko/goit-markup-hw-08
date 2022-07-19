@@ -72,13 +72,17 @@ header {
 }
 
 .menu-button {
-  position: relative;
+  position: absolute;
   display: inline-flex;
-  margin-left: 250px;
+  margin-left: 0;
   padding: 0;
-  border: black;
-  background-color: none;
+  border: 0;
+  background-color: transparent;
   cursor: pointer;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  z-index: 10;
 }
 @media screen and (mid-width: 768px) {
   .menu-button {
@@ -94,14 +98,19 @@ header {
   display: block;
 }
 
-.menu-button.is-open icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
+}
+
+.icon-cross {
+  position: absolute;
+  z-index: 10;
 }
 
 .menu-container {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -109,9 +118,12 @@ header {
   text-align: center;
   font-size: 50px;
   padding: 20px;
+  overflow-y: scroll;
 }
 .menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-nav {
@@ -124,11 +136,18 @@ header {
   margin-right: 0;
 }
 
-mobile-nav__item {
+.mobile-nav__item {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.mobile-nav__social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
 }
 
@@ -1206,19 +1225,10 @@ mobile-nav__item {
   }
 }
 
-.subscription__label {
-  display: block;
-  margin: 0;
-  justify-content: center;
-  width: 100%;
-}
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .subscription__label {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1249,9 +1259,15 @@ mobile-nav__item {
   color: var(--primary-white-color);
   background-color: transparent;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .subscription__email {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription__email {
     margin-bottom: 20px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
