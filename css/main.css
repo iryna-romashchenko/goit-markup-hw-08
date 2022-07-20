@@ -82,7 +82,7 @@ header {
   top: 0;
   right: 0;
   transform: translate(-50%, 50%);
-  z-index: 10;
+  z-index: 21;
 }
 @media screen and (mid-width: 768px) {
   .menu-button {
@@ -104,7 +104,6 @@ header {
 
 .icon-cross {
   position: absolute;
-  z-index: 10;
 }
 
 .menu-button:hover,
@@ -129,6 +128,7 @@ header {
   padding: 48px 40px;
   overflow-y: scroll;
   height: 100vh;
+  z-index: 20;
 }
 .menu-container.is-open {
   display: flex;
