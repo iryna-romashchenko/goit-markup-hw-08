@@ -696,6 +696,7 @@ header {
 /* our features */
 .features-section {
   padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -703,6 +704,7 @@ header {
 @media screen and (min-width: 1200px) {
   .features-section {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -836,7 +838,6 @@ header {
 
 @media screen and (min-width: 1200px) {
   .works {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
