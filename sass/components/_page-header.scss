@@ -243,6 +243,12 @@ margin-left: 88px;
 
 
 /* ------------header contacts----------------------------- */
+
+.contacts-list{
+@media screen and (min-width: 768px) and (max-width: 1199px){
+margin-left: -20px;
+}
+}
 .contacts {
     display: flex;
     margin-left: auto;
@@ -259,15 +265,18 @@ margin-left: 88px;
 .contact__link {
     display: flex;
     @media screen and (min-width: 768px) and (max-width: 1199px){
-    margin-left: 84px;
+    // margin-left: 84px;
     align-items: flex-end;
 }     
 }
 
 
 .contact__item:not(:last-child) {
-    margin-right: 50px;
+    // margin-right: 50px;
     margin-bottom: 10px;
+    @media screen and (min-width: 1199px){
+        margin-right: 50px;
+    }
 }
 
 .contact__image {

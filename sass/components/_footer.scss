@@ -93,6 +93,7 @@ width: 100%;
 }
 @media screen and (min-width: 1200px){
 min-width: 570px;
+justify-content: space-around;
 }
 }
 
@@ -183,7 +184,7 @@ justify-content: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 0;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     color: var(--primary-white-color);
     @media screen and (min-width: 480px) and (max-width: 1199px){
     text-align: center;
@@ -194,9 +195,17 @@ justify-content: center;
     @media screen and (max-width: 767px){
     width: 100%;
     margin-bottom: 20px;
-    // display: flex;
-    // flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     }
+        @media screen and (min-width: 1200px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+}
 
     // display: block;
     // margin: 0;
@@ -209,7 +218,7 @@ justify-content: center;
     // justify-content: center;
     // }
 
-}
+
 
 .subscription__form{
     display: flex;
@@ -219,6 +228,10 @@ justify-content: center;
     width: 100%;
     align-items: center;
     }
+ @media screen and (min-width: 1200px){
+    display: flex;
+    
+ }
 }
 
 .subscription__email {
@@ -239,10 +252,12 @@ justify-content: center;
 
     @media screen and (max-width: 767px){
     max-width: 450px;
+    margin-bottom: 20px;
     
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
+    justify-content: center;
     margin-bottom: 20px;
     width: 450px;
 }
@@ -278,4 +293,11 @@ justify-content: center;
     background-color: var(--accent-color);
     cursor: pointer;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: inline-flex;
+    }
+
+        @media screen and (min-width: 1200px){
+
+        }
 }
